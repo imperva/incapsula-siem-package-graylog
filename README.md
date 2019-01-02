@@ -5,3 +5,4 @@ Updates from January 2019 update
 - Clearer fields nomenclature
 - Added new log field entries (POP name, longitude, Delivery Rules and others)
 - New comprehensive dashboard
+.
