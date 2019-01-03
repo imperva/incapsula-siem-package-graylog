@@ -9,7 +9,7 @@
         "configuration": {
           "recv_buffer_size": 1048576,
           "port": 5044,
-          "tls_key_file": "admin",
+          "tls_key_file": "",
           "tls_enable": false,
           "tls_key_password": "",
           "tcp_keepalive": true,
@@ -1156,7 +1156,7 @@
                 "type": "relative",
                 "range": 604800
               },
-              "query": "* AND NOT rule_name:Normal"
+              "query": "_exists_:rule_name AND NOT rule_name:Normal"
             },
             "col": 2,
             "row": 3,
