@@ -653,7 +653,7 @@
                 "type": "relative",
                 "range": 604800
               },
-              "query": "_exists_:rule_name"
+              "query": "_exists_:cs9_rule_name"
             },
             "col": 1,
             "row": 12,
@@ -670,7 +670,7 @@
                 "type": "relative",
                 "range": 172800
               },
-              "query": "_exists_:rule_name"
+              "query": "_exists_:cs9_rule_name"
             },
             "col": 1,
             "row": 18,
@@ -686,7 +686,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "Client_IP",
+              "field": "client_ip",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -705,7 +705,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "Client_Type",
+              "field": "client_type",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -724,7 +724,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "ref",
+              "field": "referrer",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -743,7 +743,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "ccode",
+              "field": "country_code",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -762,7 +762,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "Request_Result",
+              "field": "request_result",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -800,7 +800,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "sourceServiceName",
+              "field": "site_name",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -819,7 +819,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "spt",
+              "field": "source_port",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -838,7 +838,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "userAgent",
+              "field": "user_agent",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -858,7 +858,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "query": "_exists_:rule_name"
+              "query": "_exists_:cs9_rule_name"
             },
             "col": 2,
             "row": 1,
@@ -874,7 +874,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "cicode",
+              "field": "city_code",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -893,7 +893,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "Client_App",
+              "field": "client_app",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -912,7 +912,7 @@
                 "type": "relative",
                 "range": 604800
               },
-              "field": "qstr",
+              "field": "query_string",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -931,7 +931,7 @@
                 "type": "relative",
                 "range": 604800
               },
-              "field": "Protocol",
+              "field": "request_protocol",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -950,7 +950,7 @@
                 "type": "relative",
                 "range": 604800
               },
-              "field": "rule_name",
+              "field": "cs9_rule_name",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -969,7 +969,7 @@
                 "type": "relative",
                 "range": 604800
               },
-              "field": "request",
+              "field": "url",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -988,7 +988,7 @@
                 "type": "relative",
                 "range": 432000
               },
-              "field": "requestMethod",
+              "field": "request_method",
               "show_pie_chart": true,
               "query": "",
               "show_data_table": true
@@ -1007,9 +1007,9 @@
                 "type": "relative",
                 "range": 604800
               },
-              "field": "rule_name",
+              "field": "cs9_rule_name",
               "show_pie_chart": true,
-              "query": "NOT rule_name:Normal",
+              "query": "NOT cs9_rule_name:Normal",
               "show_data_table": true
             },
             "col": 1,
@@ -1028,7 +1028,7 @@
               },
               "lower_is_better": false,
               "trend": true,
-              "query": "_exists_:rule_name"
+              "query": "_exists_:cs9_rule_name"
             },
             "col": 1,
             "row": 1,
@@ -1046,7 +1046,7 @@
               },
               "lower_is_better": true,
               "trend": true,
-              "query": "Main_Attack_Code:\\-1"
+              "query": "main_attack_name:\\-1"
             },
             "col": 2,
             "row": 8,
@@ -1064,7 +1064,7 @@
               },
               "lower_is_better": false,
               "trend": true,
-              "query": "Main_Attack_Code:11"
+              "query": "main_attack_name:11"
             },
             "col": 2,
             "row": 7,
@@ -1082,7 +1082,7 @@
               },
               "lower_is_better": false,
               "trend": true,
-              "query": "Main_Attack_Code:4"
+              "query": "main_attack_name:4"
             },
             "col": 1,
             "row": 2,
@@ -1098,9 +1098,9 @@
                 "type": "relative",
                 "range": 604800
               },
-              "field": "ccode",
+              "field": "country_code",
               "show_pie_chart": true,
-              "query": "* AND NOT rule_name:Normal",
+              "query": "* AND NOT cs9_rule_name:Normal",
               "show_data_table": true
             },
             "col": 1,
@@ -1117,9 +1117,9 @@
                 "type": "relative",
                 "range": 604800
               },
-              "field": "Client_IP",
+              "field": "client_ip",
               "show_pie_chart": true,
-              "query": "* AND NOT rule_name:Normal",
+              "query": "* AND NOT cs9_rule_name:Normal",
               "show_data_table": true
             },
             "col": 4,
@@ -1136,9 +1136,9 @@
                 "type": "relative",
                 "range": 604800
               },
-              "field": "Client_App",
+              "field": "client_app",
               "show_pie_chart": true,
-              "query": "* AND NOT rule_name:Normal",
+              "query": "* AND NOT cs9_rule_name:Normal",
               "show_data_table": true
             },
             "col": 3,
@@ -1156,7 +1156,11 @@
                 "type": "relative",
                 "range": 604800
               },
+<<<<<<< HEAD
               "query": "_exists_:rule_name AND NOT rule_name:Normal"
+=======
+              "query": "_exists_:cs9_rule_name AND NOT cs9_rule_name:Normal"
+>>>>>>> patch-2
             },
             "col": 2,
             "row": 3,
