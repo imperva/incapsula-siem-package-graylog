@@ -1156,11 +1156,7 @@
                 "type": "relative",
                 "range": 604800
               },
-<<<<<<< HEAD
-              "query": "_exists_:rule_name AND NOT rule_name:Normal"
-=======
               "query": "_exists_:cs9_rule_name AND NOT cs9_rule_name:Normal"
->>>>>>> patch-2
             },
             "col": 2,
             "row": 3,
