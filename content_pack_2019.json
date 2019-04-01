@@ -1156,7 +1156,7 @@
                 "type": "relative",
                 "range": 604800
               },
-              "query": "* AND NOT cs9_rule_name:Normal"
+              "query": "_exists_:cs9_rule_name AND NOT cs9_rule_name:Normal"
             },
             "col": 2,
             "row": 3,
